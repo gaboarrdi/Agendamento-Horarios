@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+
+    <title>Guille - Agendamentos </title>
+    <link rel="shortcut icon" href="./img/miniLog.png">
+</head>
+
+<body>
+    <header> <!--Inicio cabeçalho-->
+
+        <nav class="navbar navbar-expand-md navbar-light  navbar-transparente">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="./img/logo.png" alt="Guille">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    &#9776 
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Agendamentos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> <!--Fim cabeçalho-->
+
+    <section class="topo">
+        <h4>Veja os horários já agendados:</h4>
+    </section>
+    
+    <table id="tabela"class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nome:</th>
+            <th scope="col">Dia:</th>
+            <th scope="col">Período:</th>
+            <th scope="col">Mesa:</th>
+          </tr>
+        
+        </tbody>
+      </table>
+      
+      <section id="novoHorario">
+        <h2>Marque um novo horário:</h2>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                data-target=".bd-example-modal-lg">Agendar &raquo;</button>
+      </section>
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              
+              <form id="formulario" onsubmit="cadastraReserva()" >
+                  <div class="form-group">
+                      <h2>Agendamento</h2>
+                      <label for="exampleFormControlInput1">Digite seu Nome:</label>
+                      <input type="text" class="form-control" id="FormNome" name="nome" placeholder="Nome">
+                  </div>
+                  <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker"
+                      inline="true">
+                      <label for="example">Selecione o dia:</label>
+                      <input placeholder="Select date" type="date" id="FormDia" name="dia" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlSelect2">Selecione o Período</label>
+                      <select  class="form-control" id="FormPeriodo" name="periodo">
+                          <option></option>
+                          <option>Manhã</option>
+                          <option>Tarde</option>
+                          <option>Noite</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlSelect1">Selecione a Mesa:</label>
+                      <select class="form-control" id="FormMesa" name="mesa" >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                  </div>
+                   <button type="submit" class="btn btn-primary btn-lg" 
+                  data-target=".bd-example-modal-md">Agendar &raquo;</button>
+              </form>
+             
+          </div>
+      </div>
+  </div>
+   
+     <!-- JavaScript -->
+     <script src="./app.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+    <h5 class="footer">Design by Emmanuel Gaboardi 2022.</h5>
+</footer>
+
+</html> 

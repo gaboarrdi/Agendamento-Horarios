@@ -1,0 +1,36 @@
+
+#logo{
+    width: 8rem;
+    height: auto;
+}
+#descricao{
+    text-align: center;
+}
+.titulo{
+    font-size: 100px;
+    font-family: serif;
+}
+.footer{
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+}
+#novoHorario{
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+}
+/*Dentro do PopUp*/
+#formulario{
+   margin: 14px;
+}
+.topo{
+   text-align: center;
+}
+
+/*Custumizando tabela*/
+#tabela {
+    background-color: rgba(163, 163, 163, 0.589);
+    align-items: center;
+    align-content: center;
+}
