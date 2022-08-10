@@ -20,7 +20,7 @@
 <h2 align="center">🛠️ Rodando o projeto:</h2>
 <hr>
 <p> - Baixando este projeto, verá que temos duas pastas. Uma com o front-end e outra contendo o back-end.Abra as pastas separadamente em seu editor.</p>
-<p> - Para que o BACK-END funcione o primeiro passo sera ativar o venv, e baixar todas as dependências instaladas no arquivo: requirements.txt </p>
+<p> - Para que o BACK-END funcione o primeiro passo sera ativar baixar todas as dependências instaladas no arquivo: requirements.txt </p>
 <p> - Feito a intalação abra o servidor local, e para acessar o admin, use: emmanuel/ senha:123456</p>
 <p> - Abra a index.html do front-end e o projeto ja estará rodando.</p>
 
