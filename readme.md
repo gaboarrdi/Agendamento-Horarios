@@ -1,4 +1,4 @@
-<h1 align="center">DESAFIO PRÁTICO LOEFFA</h1>
+<h1 align="center">Agendamento para empresas</h1>
 <h4>Este projeto, consiste em um <strong>APP</strong> para criação de reservas de ambientes de trabalho, presencial em uma empresa. Onde o funcionário consegue agendar, e conferir as reservas ja feitas dentro do mesmo aplicativo.</h4>
 
 
@@ -41,5 +41,3 @@
 <img src="./img/mobile3.png">
 <img src="./img/mobile4.png">
 
-<h1>OBSERVAÇÕES</h1>
-<p>Tive alguns problemas para conseguir trazer a api de mesas cadastradas, e para não perder o prazo deixei este intem sem ser feito</p>
